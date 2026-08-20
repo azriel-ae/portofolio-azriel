@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azriel Aurizal Ednisia</title>
+<meta name="description" content="Portfolio of Azriel Aurizal Ednisia, student at SMKN 1 Gempol.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo"><span class="dot"></span>azriel</div>
+    <nav class="nav-links">
+      <a href="#about" class="hide-mobile" data-i18n="nav_about">about</a>
+      <a href="#skills" class="hide-mobile" data-i18n="nav_skills">skills</a>
+      <a href="#projects" class="hide-mobile" data-i18n="nav_projects">projects</a>
+      <a href="#certificates" class="hide-mobile" data-i18n="nav_certificates">certificates</a>
+      <a href="#contact" data-i18n="nav_contact">contact</a>
+      <div class="lang-switch" id="langSwitch" role="group" aria-label="Language switch">
+        <button type="button" class="lang-btn" data-lang="id">ID</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><span class="knob" id="knob">☀</span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow" data-i18n="hero_eyebrow">student · smkn 1 gempol · tkj</div>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <span class="terminal-title">azriel@portfolio: ~</span>
+        </div>
+        <div class="terminal-body">
+          <div class="prompt-line"><span class="arrow">➜</span> ~ <span id="typedQuery"></span><span class="cursor" id="typeCursor"></span></div>
+          <table class="result-table" id="resultTable">
+            <thead>
+              <tr><th>field</th><th>value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>name</td><td class="val">Azriel Aurizal Ednisia</td></tr>
+              <tr><td>school</td><td class="val">SMKN 1 Gempol — TKJ</td></tr>
+              <tr><td>grade</td><td class="val">11</td></tr>
+              <tr><td>location</td><td class="val">Indonesia</td></tr>
+            </tbody>
+          </table>
+          <div class="row-count" id="rowCount"></div>
+        </div>
+      </div>
+
+      <div class="hero-name" style="margin-top:30px;">Azriel Aurizal Ednisia</div>
+      <div class="hero-role" data-i18n="hero_role">Student from Indonesia, currently in grade 11 at <strong>SMKN 1 Gempol</strong>, majoring in Computer &amp; Network Engineering (TKJ).</div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects" data-i18n="btn_view_project">View Project →</a>
+        <a class="btn btn-outline" href="#contact" data-i18n="btn_contact_me">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num" data-i18n="about_num">01 / profile</div>
+      <div class="section-title" data-i18n="about_title">About Me</div>
+    </div>
+    <div class="about-card reveal">
+      <div class="avatar-slot" id="avatarSlot">
+  <img src="azriel.png" alt="Azriel Aurizal Ednisia" style="width: 100%; height: 100%; border-radius: 60%; object-fit: cover;">
+</div>
+      <div class="about-text">
+        <div class="comment" data-i18n="about_comment">-- who is Azriel?</div>
+        <p data-i18n="about_text">I'm Azriel Aurizal Ednisia, an 11th-grade student majoring in Computer and Network Engineering (TKJ) at SMKN 1 Gempol, Indonesia. I'm still early in my journey, but I'm committed to sharpening my skills one project at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num" data-i18n="skills_num">02 / stack</div>
+      <div class="section-title" data-i18n="skills_title">Skills</div>
+    </div>
+    <div class="schema reveal">
+      <div class="schema-head">
+        <div data-i18n="skills_col_skill">skill</div><div data-i18n="skills_col_prof">proficiency</div><div data-i18n="skills_col_strength">strength</div>
+      </div>
+      <div class="schema-row">
+        <div class="skill-name"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo">MySQL <span class="type-badge">DB</span></div>
+        <div class="skill-level" data-i18n="skill_level_building">building</div>
+        <div class="bar-track"><div class="bar-fill" style="--pct:75%"></div></div>
+      </div>
+      <div class="schema-row">
+        <div class="skill-name"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo">HTML <span class="type-badge">WEB</span></div>
+        <div class="skill-level" data-i18n="skill_level_building">building</div>
+        <div class="bar-track"><div class="bar-fill" style="--pct:80%"></div></div>
+      </div>
+      <div class="schema-row">
+        <div class="skill-name"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo">CSS <span class="type-badge">WEB</span></div>
+        <div class="skill-level" data-i18n="skill_level_building">building</div>
+        <div class="bar-track"><div class="bar-fill" style="--pct:75%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num" data-i18n="projects_num">03 / work</div>
+      <div class="section-title" data-i18n="projects_title">Projects</div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-top">
+          <span></span>
+          <span>tekajeone.my.id</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">WEBSITE XI TKJ 1</div>
+          <p class="project-desc" data-i18n="project_desc"> part of my ongoing practice turning ideas into working web applications.</p>
+          <div class="project-tags">
+            <span class="tag">web</span>
+          </div>
+          <a class="btn btn-primary" href="https://tekajeone.my.id" target="_blank" rel="noopener" data-i18n="btn_view_project">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <span></span>
+          <span>coratcoretlayar.vercel.app</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Coratcoretlayar</div>
+          <p class="project-desc" data-i18n="project_desc">Part of my ongoing practice turning ideas into working web applications.</p>
+          <div class="project-tags">
+            <span class="tag">web</span>
+            <span class="tag">vercel</span>
+          </div>
+          <a class="btn btn-primary" href="https://coratcoretlayar.vercel.app" target="_blank" rel="noopener" data-i18n="btn_view_project">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <span></span>
+          <span>redpixel</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Redpixel</div>
+          <p class="project-desc" data-i18n="project_desc">Part of my ongoing practice turning ideas into working web applications.</p>
+          <div class="project-tags">
+            <span class="tag">web</span>
+          </div>
+          <a class="btn btn-primary" href="https://redpixel.vercel.app" target="_blank" rel="noopener" data-i18n="btn_view_project">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num" data-i18n="certs_num">04 / records</div>
+      <div class="section-title" data-i18n="certs_title">Certificates</div>
+    </div>
+    <div class="certs-grid reveal">
+      <div class="cert-slot">
+        <img src="sertifikat1.png" alt="Sertifikat 1" class="cert-img">
+        <span class="cert-placeholder-text" data-i18n="cert_placeholder">+ 404 </span>
+        <div class="zoom-hint">🔍</div>
+      </div>
+      <div class="cert-slot">
+        <img src="" alt="Sertifikat 2" class="cert-img">
+        <span class="cert-placeholder-text" data-i18n="cert_placeholder">+ 404 </span>
+        <div class="zoom-hint">🔍</div>
+      </div>
+      <div class="cert-slot">
+        <img src="" alt="Sertifikat 3" class="cert-img">
+        <span class="cert-placeholder-text" data-i18n="cert_placeholder">+ 404 </span>
+        <div class="zoom-hint">🔍</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num" data-i18n="contact_num">05 / reach me</div>
+      <div class="section-title" data-i18n="contact_title">Contact Me</div>
+    </div>
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto:azrielaurizal27@gmail.com">
+        <div class="contact-label" data-i18n="contact_label_email">Email</div>
+        <div class="contact-value link">azrielaurizal27@gmail.com</div>
+      </a>
+      <a class="contact-card" href="https://instagram.com/azrieledn" target="_blank" rel="noopener">
+        <div class="contact-label" data-i18n="contact_label_instagram">Instagram</div>
+        <div class="contact-value link">@azrieledn</div>
+      </a>
+      <a class="contact-card" href="https://github.com/azriel-ae" target="_blank" rel="noopener">
+        <div class="contact-label" data-i18n="contact_label_github">GitHub</div>
+        <div class="contact-value link">azriel-ae</div>
+      </a>
+      <a class="contact-card" href="https://wa.me/6281227596045" target="_blank" rel="noopener">
+        <div class="contact-label" data-i18n="contact_label_whatsapp">WhatsApp</div>
+        <div class="contact-value link">+62 812-2759-6045</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> <span>Azriel Aurizal</span>
+</footer>
+
+<div class="cert-modal" id="certModal">
+  <button class="cert-modal-close" id="certModalClose" aria-label="Close">✕</button>
+  <img src="" alt="Sertifikat" id="certModalImg">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
